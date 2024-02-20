@@ -11,7 +11,8 @@ import SwiftUI
 struct SwiftUITestApp: App {
     var body: some Scene {
         WindowGroup {
-            SignUpView()
+            let viewModel = SignUpViewModel()
+            SignUpView(viewModel: viewModel)
         }
     }
 }

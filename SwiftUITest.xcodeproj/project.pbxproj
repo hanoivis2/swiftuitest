@@ -12,6 +12,7 @@
 		F58D44022B83309E00D5BCF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F58D44012B83309E00D5BCF7 /* Assets.xcassets */; };
 		F58D44052B83309E00D5BCF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F58D44042B83309E00D5BCF7 /* Preview Assets.xcassets */; };
 		F58D440E2B83319A00D5BCF7 /* ColorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D440D2B83319900D5BCF7 /* ColorCodes.swift */; };
+		F58D44112B8489AB00D5BCF7 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D44102B8489AB00D5BCF7 /* SignUpViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		F58D44012B83309E00D5BCF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F58D44042B83309E00D5BCF7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F58D440D2B83319900D5BCF7 /* ColorCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCodes.swift; sourceTree = "<group>"; };
+		F58D44102B8489AB00D5BCF7 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,8 @@
 		F58D43F12B83309B00D5BCF7 = {
 			isa = PBXGroup;
 			children = (
+				F58D440C2B83316100D5BCF7 /* Views */,
+				F58D440F2B84899800D5BCF7 /* ViewModels */,
 				F58D440B2B83314700D5BCF7 /* Models */,
 				F58D43FC2B83309B00D5BCF7 /* SwiftUITest */,
 				F58D43FB2B83309B00D5BCF7 /* Products */,
@@ -54,9 +58,7 @@
 		F58D43FC2B83309B00D5BCF7 /* SwiftUITest */ = {
 			isa = PBXGroup;
 			children = (
-				F58D440C2B83316100D5BCF7 /* Views */,
 				F58D43FD2B83309B00D5BCF7 /* SwiftUITestApp.swift */,
-				F58D43FF2B83309B00D5BCF7 /* SignUpView.swift */,
 				F58D44012B83309E00D5BCF7 /* Assets.xcassets */,
 				F58D44032B83309E00D5BCF7 /* Preview Content */,
 			);
@@ -82,8 +84,17 @@
 		F58D440C2B83316100D5BCF7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F58D43FF2B83309B00D5BCF7 /* SignUpView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F58D440F2B84899800D5BCF7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F58D44102B8489AB00D5BCF7 /* SignUpViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +169,7 @@
 			files = (
 				F58D440E2B83319A00D5BCF7 /* ColorCodes.swift in Sources */,
 				F58D44002B83309B00D5BCF7 /* SignUpView.swift in Sources */,
+				F58D44112B8489AB00D5BCF7 /* SignUpViewModel.swift in Sources */,
 				F58D43FE2B83309B00D5BCF7 /* SwiftUITestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

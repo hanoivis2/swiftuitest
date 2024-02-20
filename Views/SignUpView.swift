@@ -9,14 +9,11 @@ import SwiftUI
 
 struct SignUpView: View {
     
-    @State var username = ""
-    @State var email = ""
-    @State var password = ""
-    @State var confirmPassword = ""
-    var usernameError = "Required"
-    var emailError = "Required"
-    var passwordError = "Required"
-    var confirmPasswordError = ""
+    @ObservedObject private var viewModel: SignUpViewModel
+    
+    init(viewModel: SignUpViewModel) {
+        self.viewModel = viewModel
+    }
     
     var body: some View {
         ZStack {
@@ -27,19 +24,34 @@ struct SignUpView: View {
                     .foregroundColor(.white)
                     .padding(.bottom, 60.0)
                     
-                AuthTextfield(title: "Username", textValue: $username, errorValue: usernameError)
-                AuthTextfield(title: "Email", textValue: $email, errorValue: emailError, keyboardType: .emailAddress)
-                AuthTextfield(title: "Password", textValue: $password, errorValue: passwordError, isSecured: true)
-                AuthTextfield(title: "Confirm Password", textValue: $confirmPassword, errorValue: confirmPasswordError, isSecured: true)
+                AuthTextfield(title: "Username", textValue: $viewModel.username, errorValue: viewModel.usernameError)
+                AuthTextfield(title: "Email", textValue: $viewModel.email, errorValue: viewModel.emailError, keyboardType: .emailAddress)
+                AuthTextfield(title: "Password", textValue: $viewModel.password, errorValue: viewModel.passwordError, isSecured: true)
+                AuthTextfield(title: "Confirm Password", textValue: $viewModel.confirmPassword, errorValue: viewModel.confirmPasswordError, isSecured: true)
+                
+                Button(action: signUp) {
+                    Text("Sign Up")
+                }
+                .frame(minWidth: 0.0, maxWidth: .infinity)
+                .foregroundColor(Color.white)
+                .padding()
+                .background(Color.black)
+                .cornerRadius(.infinity)
+                .padding(.top, 20.0)
             }
             .padding(60.0)
         }
+    }
+    
+    func signUp() -> Void {
+        print("Sign up clicked")
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpView()
+        let viewModel = SignUpViewModel()
+        return SignUpView(viewModel: viewModel)
     }
 }
 
@@ -76,8 +88,6 @@ struct AuthTextfield: View {
     var keyboardType: UIKeyboardType = .default
     var body: some View {
         
-       
-        
         VStack(spacing: 0) {
             if (isSecured) {
                 SecureField(title, text: $textValue)
@@ -85,6 +95,7 @@ struct AuthTextfield: View {
                     .background(ColorCodes.background.color())
                     .cornerRadius(5.0)
                     .keyboardType(keyboardType)
+                    .padding(.bottom, 5.0)
             }
             else {
                 TextField(title, text: $textValue)
@@ -92,6 +103,7 @@ struct AuthTextfield: View {
                     .background(ColorCodes.background.color())
                     .cornerRadius(5.0)
                     .keyboardType(keyboardType)
+                    .padding(.bottom, 5.0)
             }
             Text(errorValue)
                 .fontWeight(.light)
