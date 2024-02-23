@@ -3,19 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CAFD67E1699286285BE07E70 /* Pods_SwiftUITest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4014BFEA0C49C7C64B7EB329 /* Pods_SwiftUITest.framework */; };
 		F58D43FE2B83309B00D5BCF7 /* SwiftUITestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D43FD2B83309B00D5BCF7 /* SwiftUITestApp.swift */; };
 		F58D44002B83309B00D5BCF7 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D43FF2B83309B00D5BCF7 /* SignUpView.swift */; };
 		F58D44022B83309E00D5BCF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F58D44012B83309E00D5BCF7 /* Assets.xcassets */; };
 		F58D44052B83309E00D5BCF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F58D44042B83309E00D5BCF7 /* Preview Assets.xcassets */; };
 		F58D440E2B83319A00D5BCF7 /* ColorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D440D2B83319900D5BCF7 /* ColorCodes.swift */; };
 		F58D44112B8489AB00D5BCF7 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D44102B8489AB00D5BCF7 /* SignUpViewModel.swift */; };
+		F5E59DAB2B86ECB100D02D60 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E59DAA2B86ECB100D02D60 /* AuthModel.swift */; };
+		F5E59DB52B86FBCF00D02D60 /* AuthHttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E59DB12B86FBCF00D02D60 /* AuthHttpRouter.swift */; };
+		F5E59DB62B86FBCF00D02D60 /* AuthHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E59DB22B86FBCF00D02D60 /* AuthHttpService.swift */; };
+		F5E59DB72B86FBCF00D02D60 /* HttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E59DB32B86FBCF00D02D60 /* HttpRouter.swift */; };
+		F5E59DB82B86FBCF00D02D60 /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E59DB42B86FBCF00D02D60 /* HttpService.swift */; };
+		F5E59DBB2B86FBF100D02D60 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E59DBA2B86FBF100D02D60 /* AuthService.swift */; };
+		F5E59DBD2B870A6000D02D60 /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E59DBC2B870A6000D02D60 /* AuthAPI.swift */; };
+		F5E59DBF2B8728C900D02D60 /* AuthServiceParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E59DBE2B8728C900D02D60 /* AuthServiceParser.swift */; };
+		F5E59DC12B872F3900D02D60 /* TokenResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E59DC02B872F3900D02D60 /* TokenResponseModel.swift */; };
+		F5E59DC32B87323A00D02D60 /* SignUpErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E59DC22B87323A00D02D60 /* SignUpErrorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4014BFEA0C49C7C64B7EB329 /* Pods_SwiftUITest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUITest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9C5F2DAC06E35935E43C113 /* Pods-SwiftUITest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUITest.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUITest/Pods-SwiftUITest.debug.xcconfig"; sourceTree = "<group>"; };
+		D305024209570AE37EFAF4F5 /* Pods-SwiftUITest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUITest.release.xcconfig"; path = "Target Support Files/Pods-SwiftUITest/Pods-SwiftUITest.release.xcconfig"; sourceTree = "<group>"; };
 		F58D43FA2B83309B00D5BCF7 /* SwiftUITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F58D43FD2B83309B00D5BCF7 /* SwiftUITestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITestApp.swift; sourceTree = "<group>"; };
 		F58D43FF2B83309B00D5BCF7 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -23,6 +37,16 @@
 		F58D44042B83309E00D5BCF7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F58D440D2B83319900D5BCF7 /* ColorCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCodes.swift; sourceTree = "<group>"; };
 		F58D44102B8489AB00D5BCF7 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		F5E59DAA2B86ECB100D02D60 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		F5E59DB12B86FBCF00D02D60 /* AuthHttpRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthHttpRouter.swift; sourceTree = "<group>"; };
+		F5E59DB22B86FBCF00D02D60 /* AuthHttpService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthHttpService.swift; sourceTree = "<group>"; };
+		F5E59DB32B86FBCF00D02D60 /* HttpRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRouter.swift; sourceTree = "<group>"; };
+		F5E59DB42B86FBCF00D02D60 /* HttpService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
+		F5E59DBA2B86FBF100D02D60 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		F5E59DBC2B870A6000D02D60 /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
+		F5E59DBE2B8728C900D02D60 /* AuthServiceParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceParser.swift; sourceTree = "<group>"; };
+		F5E59DC02B872F3900D02D60 /* TokenResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenResponseModel.swift; sourceTree = "<group>"; };
+		F5E59DC22B87323A00D02D60 /* SignUpErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpErrorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,20 +54,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAFD67E1699286285BE07E70 /* Pods_SwiftUITest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		546895050F71B203E847078A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9C5F2DAC06E35935E43C113 /* Pods-SwiftUITest.debug.xcconfig */,
+				D305024209570AE37EFAF4F5 /* Pods-SwiftUITest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F58D43F12B83309B00D5BCF7 = {
 			isa = PBXGroup;
 			children = (
+				F5E59DB92B86FBE200D02D60 /* Services */,
+				F5E59DB02B86FBCF00D02D60 /* HttpServices */,
 				F58D440C2B83316100D5BCF7 /* Views */,
 				F58D440F2B84899800D5BCF7 /* ViewModels */,
 				F58D440B2B83314700D5BCF7 /* Models */,
 				F58D43FC2B83309B00D5BCF7 /* SwiftUITest */,
 				F58D43FB2B83309B00D5BCF7 /* Products */,
+				546895050F71B203E847078A /* Pods */,
+				F90D4FB329FB935D30C8F8D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +115,9 @@
 			isa = PBXGroup;
 			children = (
 				F58D440D2B83319900D5BCF7 /* ColorCodes.swift */,
+				F5E59DAA2B86ECB100D02D60 /* AuthModel.swift */,
+				F5E59DC02B872F3900D02D60 /* TokenResponseModel.swift */,
+				F5E59DC22B87323A00D02D60 /* SignUpErrorModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -97,6 +138,35 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		F5E59DB02B86FBCF00D02D60 /* HttpServices */ = {
+			isa = PBXGroup;
+			children = (
+				F5E59DB12B86FBCF00D02D60 /* AuthHttpRouter.swift */,
+				F5E59DB22B86FBCF00D02D60 /* AuthHttpService.swift */,
+				F5E59DBC2B870A6000D02D60 /* AuthAPI.swift */,
+				F5E59DB32B86FBCF00D02D60 /* HttpRouter.swift */,
+				F5E59DB42B86FBCF00D02D60 /* HttpService.swift */,
+			);
+			path = HttpServices;
+			sourceTree = "<group>";
+		};
+		F5E59DB92B86FBE200D02D60 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F5E59DBA2B86FBF100D02D60 /* AuthService.swift */,
+				F5E59DBE2B8728C900D02D60 /* AuthServiceParser.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F90D4FB329FB935D30C8F8D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4014BFEA0C49C7C64B7EB329 /* Pods_SwiftUITest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F58D44082B83309E00D5BCF7 /* Build configuration list for PBXNativeTarget "SwiftUITest" */;
 			buildPhases = (
+				7137C8A708BF472F1D25BD8C /* [CP] Check Pods Manifest.lock */,
 				F58D43F62B83309B00D5BCF7 /* Sources */,
 				F58D43F72B83309B00D5BCF7 /* Frameworks */,
 				F58D43F82B83309B00D5BCF7 /* Resources */,
+				8680C5434469E7D7CC110C7C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,7 +205,7 @@
 				};
 			};
 			buildConfigurationList = F58D43F52B83309B00D5BCF7 /* Build configuration list for PBXProject "SwiftUITest" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -162,14 +234,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7137C8A708BF472F1D25BD8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftUITest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8680C5434469E7D7CC110C7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUITest/Pods-SwiftUITest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUITest/Pods-SwiftUITest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUITest/Pods-SwiftUITest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F58D43F62B83309B00D5BCF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F58D440E2B83319A00D5BCF7 /* ColorCodes.swift in Sources */,
+				F5E59DB82B86FBCF00D02D60 /* HttpService.swift in Sources */,
+				F5E59DBD2B870A6000D02D60 /* AuthAPI.swift in Sources */,
+				F5E59DB62B86FBCF00D02D60 /* AuthHttpService.swift in Sources */,
+				F5E59DB52B86FBCF00D02D60 /* AuthHttpRouter.swift in Sources */,
+				F5E59DAB2B86ECB100D02D60 /* AuthModel.swift in Sources */,
+				F5E59DC12B872F3900D02D60 /* TokenResponseModel.swift in Sources */,
 				F58D44002B83309B00D5BCF7 /* SignUpView.swift in Sources */,
+				F5E59DB72B86FBCF00D02D60 /* HttpRouter.swift in Sources */,
+				F5E59DBB2B86FBF100D02D60 /* AuthService.swift in Sources */,
+				F5E59DC32B87323A00D02D60 /* SignUpErrorModel.swift in Sources */,
 				F58D44112B8489AB00D5BCF7 /* SignUpViewModel.swift in Sources */,
+				F5E59DBF2B8728C900D02D60 /* AuthServiceParser.swift in Sources */,
 				F58D43FE2B83309B00D5BCF7 /* SwiftUITestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,7 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -281,7 +405,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -293,6 +417,7 @@
 		};
 		F58D44092B83309E00D5BCF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9C5F2DAC06E35935E43C113 /* Pods-SwiftUITest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -307,6 +432,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,6 +448,7 @@
 		};
 		F58D440A2B83309E00D5BCF7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D305024209570AE37EFAF4F5 /* Pods-SwiftUITest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -336,6 +463,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

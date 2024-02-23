@@ -110,5 +110,6 @@ struct AuthTextfield: View {
                 .foregroundColor(ColorCodes.failure.color())
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
         }
+        .padding(.bottom, 5.0)
     }
 }
