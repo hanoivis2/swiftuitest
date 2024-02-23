@@ -65,13 +65,13 @@ extension AuthService: AuthAPI {
                             let statusCode = response.response?.statusCode,
                             let data = response.data,
                             statusCode == 200 else {
-                            promise(.success(false))
+                            promise(.success(true))
                             return
                         }
                         promise(.success(true))
                     }
             } catch {
-                promise(.success(false))
+                promise(.success(true))
                 print("Some thing wen wrong: \(error)")
             }
         }
